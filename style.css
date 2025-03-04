@@ -171,6 +171,12 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+.button-draw:disabled {
+    background-color: #ccc; /* Cinza para indicar desativado */
+    cursor: not-allowed; /* Mostra que não é clicável */
+    opacity: 0.5; /* Deixa o botão mais transparente */
+}
+
 /* imagem borda arredondada */
 .imagem-arredondada {
     width: 300px;

@@ -34,6 +34,7 @@ function atualizarLista() {
         item.textContent = participantes[i]; // Define o texto do item como o nome do amigo correspondente no array
         listaAmigos.appendChild(item); // Adiciona o item à lista exibida na interface
     }
+    document.getElementById('reiniciar').removeAttribute('disabled');
 }
 
 // Função para sortear um amigo aleatoriamente
@@ -43,12 +44,20 @@ function sortearAmigo(){
         alert("Adicione pelo menos 3 amigos para sortear");
         return; // Interrompe a função se houver menos de 3 participantes
     }
-    
-    
+   
     let amigoSorteado = participantes[Math.floor(Math.random() * participantes.length)]; // Seleciona aleatoriamente um amigo do array de participantes
     let resultado = document.getElementById("resultado"); // Obtém o elemento onde o resultado será exibido
     resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`; // Exibe o nome do amigo sorteado na interface
 
     let limparLista = document.getElementById("listaAmigos"); // Obtém o elemento da lista de amigos para limpar a exibição
     limparLista.innerHTML = ""; // Limpa a lista de amigos da interface após o sorteio
+}
+
+// Reiniciar Jogo
+function reiniciarJogo(){
+    alert("Jogo Reiniciado")
+    participantes = []; // Zera o array de participantes
+    document.getElementById("listaAmigos").innerHTML = ""; // Limpa a lista da interface
+    document.getElementById("resultado").innerHTML = ""; // Limpa o resultado do sorteio
+    document.getElementById("reiniciar").setAttribute('disabled', 'true'); // Desabilita o botão de reinício
 }
