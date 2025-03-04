@@ -48,8 +48,8 @@ O projeto foi desenvolvido utilizando **HTML**, **CSS** e **JavaScript**.
 - **script.js**: Contém a lógica JavaScript para adicionar amigos, sortear e reiniciar o jogo.
 
 ## Como jogar
-
-[](https://one-challenge-amigo-secreto-omega.vercel.app)
+Você pode acessar o projeto diretamente na web:  
+[Amigo Secreto Online](https://one-challenge-amigo-secreto-omega.vercel.app)
 
 ## Como Executar o Projeto
 
@@ -62,10 +62,10 @@ O projeto foi desenvolvido utilizando **HTML**, **CSS** e **JavaScript**.
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-Nome: Pâmela Peron
-Email: peronpamela@gamil.com
-GitHub: Batppam
+- Nome: Pâmela Peron
+- Email: peronpamela@gamil.com
+- GitHub: Batppam
 
 ## Licença
-The [MIT License](https://github.com/Batppam/One-ChallengeAmigoSecreto/blob/main/LICENSE) (MIT)
-Copyright ©️ 2025 - Jogo do Amigo Secreto
+- The [MIT License](https://github.com/Batppam/One-ChallengeAmigoSecreto/blob/main/LICENSE) (MIT)
+- Copyright ©️ 2025 - Jogo do Amigo Secreto
