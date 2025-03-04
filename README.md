@@ -72,6 +72,6 @@ Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em c
 
 ## Agradecimento Especial
 
-![ONE Logo](./assets/ONE-logo.png)
-![MCIO Logo](./assets/mcio-brasil-logo.png)
-Agradeço especialmente à [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) e ao [MCIO](https://mciobrasil.org.br/SitePages/home.aspx) por me proporcionarem esta oportunidade.
+<img src="./assets/ONE-logo.png" alt="ONE Logo" width="400" height="100">
+<img src="./assets/mcio-brasil-logo.png" alt="MCIO Logo" width="400" height="200>
+Agradeço especialmente à [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) e a [MCIO](https://mciobrasil.org.br/SitePages/home.aspx) por me proporcionarem esta oportunidade.
