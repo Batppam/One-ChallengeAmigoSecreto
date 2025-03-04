@@ -49,7 +49,7 @@ function sortearAmigo() {
     let limparLista = document.getElementById("listaAmigos");
     limparLista.innerHTML = ""; // Limpa a exibição da lista de amigos
 
-    if (participantes.length === 0) {
+    if (participantes.length === 0) { // Verifica se há amigos ainda na lista
         alert("Não há mais amigos para sortear!");
         document.getElementById('reiniciar').removeAttribute('disabled'); // Habilitar botão de reset
         return;
@@ -71,5 +71,5 @@ function reiniciarJogo(){
     document.getElementById("listaAmigos").innerHTML = ""; // Limpa a lista da interface
     document.getElementById("resultado").innerHTML = ""; // Limpa o resultado do sorteio
     document.getElementById("reiniciar").setAttribute('disabled', 'true'); // Desabilita o botão de reinício
-    document.getElementById("sortear").setAttribute('disabled', 'true'); // Desabilita o botão de reinício
+    document.getElementById("sortear").setAttribute('disabled', 'true'); // Desabilita o botão de sorteio
 }
