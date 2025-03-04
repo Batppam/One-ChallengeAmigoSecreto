@@ -1,6 +1,9 @@
 let participantes = [];  // Cria um array vazio para armazenar os nomes dos participantes
 
-// Função para adicionar um amigo à lista
+
+ alert("Adicione pelo menos 3 amigos iniciar o jogo"); // Aviso de amigos minimos. 
+
+ // Função para adicionar um amigo à lista
 function adicionarAmigo(){
     
     let inputAmigo = document.getElementById('amigo'); // Obtém o elemento de entrada do nome do amigo pelo ID
@@ -21,7 +24,7 @@ function adicionarAmigo(){
 
 // Função para atualizar a exibição da lista de amigos na interface
 function atualizarLista() {
-    
+   
     let listaAmigos = document.getElementById("listaAmigos"); // Obtém o elemento da lista pelo ID
     
     // Limpa a lista antes de recriá-la (evita duplicações)
@@ -34,23 +37,31 @@ function atualizarLista() {
         item.textContent = participantes[i]; // Define o texto do item como o nome do amigo correspondente no array
         listaAmigos.appendChild(item); // Adiciona o item à lista exibida na interface
     }
-    document.getElementById('reiniciar').removeAttribute('disabled');
+
+     if (participantes.length >= 3){ // Verifica se há pelo menos 3 participantes antes de realizar o sorteio
+        document.getElementById('sortear').removeAttribute('disabled'); // Habilitar botão de reset
+        return; 
+    }
 }
 
 // Função para sortear um amigo aleatoriamente
-function sortearAmigo(){
-    // Verifica se há pelo menos 3 participantes antes de realizar o sorteio
-    if (participantes.length < 3){
-        alert("Adicione pelo menos 3 amigos para sortear");
-        return; // Interrompe a função se houver menos de 3 participantes
-    }
-   
-    let amigoSorteado = participantes[Math.floor(Math.random() * participantes.length)]; // Seleciona aleatoriamente um amigo do array de participantes
-    let resultado = document.getElementById("resultado"); // Obtém o elemento onde o resultado será exibido
-    resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`; // Exibe o nome do amigo sorteado na interface
+function sortearAmigo() {
+    let limparLista = document.getElementById("listaAmigos");
+    limparLista.innerHTML = ""; // Limpa a exibição da lista de amigos
 
-    let limparLista = document.getElementById("listaAmigos"); // Obtém o elemento da lista de amigos para limpar a exibição
-    limparLista.innerHTML = ""; // Limpa a lista de amigos da interface após o sorteio
+    if (participantes.length === 0) {
+        alert("Não há mais amigos para sortear!");
+        document.getElementById('reiniciar').removeAttribute('disabled'); // Habilitar botão de reset
+        return;
+    }
+
+    let indiceSorteado = Math.floor(Math.random() * participantes.length); // Sorteia um amigo aleatorio
+    let amigoSorteado = participantes[indiceSorteado]; 
+
+    participantes.splice(indiceSorteado, 1); // Remove o amigo sorteado da lista
+
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`; // Exibe o nome do sorteado
 }
 
 // Reiniciar Jogo
@@ -60,4 +71,5 @@ function reiniciarJogo(){
     document.getElementById("listaAmigos").innerHTML = ""; // Limpa a lista da interface
     document.getElementById("resultado").innerHTML = ""; // Limpa o resultado do sorteio
     document.getElementById("reiniciar").setAttribute('disabled', 'true'); // Desabilita o botão de reinício
+    document.getElementById("sortear").setAttribute('disabled', 'true'); // Desabilita o botão de reinício
 }
