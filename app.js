@@ -1,7 +1,7 @@
 let participantes = [];  // Cria um array vazio para armazenar os nomes dos participantes
 
 
- alert("Adicione pelo menos 3 amigos iniciar o jogo"); // Aviso de amigos minimos. 
+ alert("Adicione pelo menos 3 amigos para iniciar o jogo"); // Aviso de amigos minimos. 
 
  // Função para adicionar um amigo à lista
 function adicionarAmigo(){
