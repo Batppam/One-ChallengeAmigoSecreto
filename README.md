@@ -69,3 +69,9 @@ Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em c
 ## Licença
 - The [MIT License](https://github.com/Batppam/One-ChallengeAmigoSecreto/blob/main/LICENSE) (MIT)
 - Copyright ©️ 2025 - Jogo do Amigo Secreto
+
+## Agradecimento Especial
+
+![ONE Logo](./assets/ONE-logo.png)
+![MCIO Logo](./assets/mcio-brasil-logo.png)
+Agradeço especialmente à [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) e ao [MCIO](https://mciobrasil.org.br/SitePages/home.aspx) por me proporcionarem esta oportunidade.
