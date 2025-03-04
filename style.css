@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
     --color-primary: #A67C52;
-    --color-secondary: #F3EACF;
-    --color-tertiary: #E6A4B4;
-    --color-button: #8CB4C8;
-    --color-button-hover: #F4C57D;
+    --color-secondary: #FAEBCD;
+    --color-tertiary: #E8A6A1;
+    --color-button: #92B4C8;
+    --color-button-hover: #E6C07C;
     --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-white: #5A3E36;
+
+    --fonte-titulo: "Fredoka", sans-serif;
+    --fonte-subtitulo: "Quicksand", sans-serif;
+    --fonte-texto: "Poppins", sans-serif;
 }
 
 /* Estilos gerais */
@@ -36,6 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2%;
     padding: 40px 0 0;
 }
 
@@ -55,14 +62,14 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: var(--fonte-titulo);
     font-weight: 900;
-    font-style: italic;
+    /*font-style: italic;*/
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: var(--fonte-subtitulo);
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);
@@ -88,8 +95,11 @@ body {
 }
 
 .button-container {
-    width: 300px;
+    display: flex;
+    gap: 5px;
+    width: 550px;
     justify-content: center;
+
 }
 
 /* Estilos de entrada de texto */
@@ -100,14 +110,14 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: var(--fonte-texto);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-texto);
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
@@ -129,14 +139,14 @@ button {
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-texto);
     font-size: 18px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #E6C07C;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
